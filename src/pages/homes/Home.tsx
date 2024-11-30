@@ -83,12 +83,16 @@ const devData = [
     }
 ];
 
-
+interface CardData {
+    name: string;
+    description: string;
+    route: string;
+}
 
 export const Home = () => {
     const { theme, toggleTheme } = useTheme();
 
-    const renderCards = (data) => (
+    const renderCards = (data: CardData[]) => (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mx-auto">
             {data.map((item) => (
                 <div key={item.route} className="bg-card p-5 border rounded-lg shadow-md w-full">
