@@ -42,13 +42,13 @@ This project is designed to help understand **database fundamentals** using **SQ
 - **Install dependencies**
 
     ```bash
-    pip install -r requirements.txt
+   npm install
     ```
 
 - **Run the application**
 
     ```bash
-    python app.py
+   npm run dev
     ```
 
 - The application will connect to the database and run the queries as specified in the code.
