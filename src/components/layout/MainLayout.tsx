@@ -15,7 +15,7 @@ import {
   Menu,
   X,
   Github,
-  Heart,
+  Rocket,
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -156,8 +156,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
             <span>@mochrks</span>
           </a>
           <div className="flex items-center justify-center gap-1 text-[10px] text-muted-foreground">
-            <span>© 2024</span>
-            <Heart className="h-2.5 w-2.5 text-red-400" />
+            <span>© {new Date().getFullYear()}</span>
+            <Rocket className="h-2.5 w-2.5 text-blue-400 animate-pulse" />
             <span>SQL Learning Hub</span>
           </div>
         </div>
